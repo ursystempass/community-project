@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('nama', 100);
+            $table->enum('role', ['pengurus', 'anggota']);
             $table->enum('jk', ['Laki-laki', 'Perempuan']);
             $table->date('tgl_lahir');
             $table->string('whatsapp', 15);
