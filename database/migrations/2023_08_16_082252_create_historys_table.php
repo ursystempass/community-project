@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('riwayat_aktivitas', function (Blueprint $table) {
+        Schema::create('historys', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('users_id');
             $table->unsignedBigInteger('events_id')->nullable();
             // $table->unsignedBigInteger('pencapaians_id')->nullable();
-            $table->string('deskripsi');
+            $table->string('description');
             $table->timestamps();
 
             // Foreign keys
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('riwayat_aktivitas');
+        Schema::dropIfExists('historys');
     }
 };

@@ -13,23 +13,23 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('nama', 100);
-            $table->enum('role', ['pengurus', 'anggota']);
-            $table->enum('jk', ['Laki-laki', 'Perempuan']);
-            $table->date('tgl_lahir');
+            $table->string('name', 100);
+            $table->enum('role', ['administrator', 'member']);
+            $table->enum('gender', ['Male', 'Female']);
+            $table->date('date_birth');
             $table->string('whatsapp', 15);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('alamat', 100);
-            $table->string('provinsi', 100);
-            $table->string('kabupaten', 100);
-            $table->string('kecamatan', 100);
-            $table->string('kodepos', 100);
+            $table->string('address', 100);
+            $table->string('province', 100);
+            $table->string('regency', 100);
+            $table->string('district', 100);
+            $table->string('postal_code', 100);
             $table->text('KTP');
             $table->text('SIM');
             $table->text('STNK');
-            $table->date('tgl_gabung');
+            $table->date('join');
             $table->rememberToken();
             $table->timestamps();
         });

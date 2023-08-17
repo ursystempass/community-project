@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('komenposts', function (Blueprint $table) {
+        Schema::create('commentposts', function (Blueprint $table) {
             $table->id('id');
             $table->unsignedBigInteger('events_id')->nullable();
-            $table->text('konten');
-            $table->dateTime('tgl_post');
+            $table->text('content');
+            $table->dateTime('date_post');
             $table->timestamps();
             $table->foreign('events_id')->references('id')->on('events')->onDelete('set null');
         });
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('komenposts');
+        Schema::dropIfExists('commentposts');
     }
 };
