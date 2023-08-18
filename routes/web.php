@@ -43,11 +43,11 @@ Route::get('/', function () {
 Route::post('/submit-message', function (Request $request) {
     $message = new Message();
 
-    $message->nama = $request->input('nama');
+    $message->nama = $request->input('name');
     $message->email = $request->input('email');
-    $message->no_tlp = $request->input('no_tlp');
+    $message->no_tlp = $request->input('phone_number');
     $message->subject = $request->input('subject');
-    $message->pesan = $request->input('pesan');
+    $message->pesan = $request->input('message');
 
     $message->save();
 
