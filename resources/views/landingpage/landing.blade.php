@@ -255,15 +255,15 @@
             onsubmit="return confirm('Terima kasih, pesan anda berhasil dikirim!')">
             @csrf
             <div class="inputBox">
-                <input type="text" name="nama" placeholder="Masukan Nama Anda" data-aos="fade-up">
+                <input type="text" name="name" placeholder="Masukan Nama Anda" data-aos="fade-up">
                 <input type="email" name="email" placeholder="Masukan Email Anda" data-aos="fade-up">
             </div>
 
             <div class="inputBox">
-                <input type="number" name="no_tlp" placeholder="Masukan Nomor Telepon Anda" data-aos="fade-up">
+                <input type="number" name="phone_number" placeholder="Masukan Nomor Telepon Anda" data-aos="fade-up">
                 <input type="text" name="subject" placeholder="Judul Pesan" data-aos="fade-up">
             </div>
-            <textarea name="pesan" placeholder="Kirimkan Pesanmu" cols="30" rows="10" data-aos="fade-up"></textarea>
+            <textarea name="message" placeholder="Kirimkan Pesanmu" cols="30" rows="10" data-aos="fade-up"></textarea>
             <input type="submit" value="send message" class="btn">
 
         </form>
