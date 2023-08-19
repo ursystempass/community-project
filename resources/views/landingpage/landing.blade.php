@@ -339,7 +339,7 @@
                 <a href="#"><i class="fas fa-chevron-right"></i>Ride Adventures</a>
                 <a href="#"><i class="fas fa-chevron-right"></i>Member Benefits</a>
                 <a href="#"><i class="fas fa-chevron-right"></i>Profil</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>Login</a>
+                <a href="/login"><i class="fas fa-chevron-right"></i>Login</a>
                 <a href="#"><i class="fas fa-chevron-right"></i>Register</a>
                 <a href="#"><i class="fas fa-chevron-right"></i>Lainnya</a>
             </div>

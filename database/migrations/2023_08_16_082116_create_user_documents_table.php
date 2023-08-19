@@ -9,23 +9,22 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
+    public function up(): void
     {
-        Schema::create('messages', function (Blueprint $table) {
+        Schema::create('users_documents', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->string('email');
-            $table->string('phone_number');
-            $table->string('subject');
-            $table->text('message');
+            $table->enum('image', ['KTP', 'SIM', 'STNK']);
             $table->timestamps();
         });
     }
 
-    public function down()
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
     {
-        Schema::dropIfExists('messages');
+        Schema::dropIfExists('user_documents');
     }
 };

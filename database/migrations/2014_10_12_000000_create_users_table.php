@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
-            $table->enum('role', ['administrator', 'member']);
+            $table->enum('role', ['admin','member', 'non-member'])->default('non-member');
             $table->enum('gender', ['Male', 'Female']);
             $table->date('date_birth');
             $table->string('whatsapp', 15);
@@ -23,12 +23,9 @@ return new class extends Migration
             $table->string('password');
             $table->string('address', 100);
             $table->string('province', 100);
-            $table->string('regency', 100);
+            $table->string('city', 100);
             $table->string('district', 100);
             $table->string('postal_code', 100);
-            $table->text('KTP');
-            $table->text('SIM');
-            $table->text('STNK');
             $table->date('join');
             $table->rememberToken();
             $table->timestamps();
