@@ -47,3 +47,8 @@ Route::post('/submit-message', function (Request $request) {
 
 Route::resource('events', EventController::class);
 // ends
+
+// sejarah
+Route::get('/profile/sejarah', function () {
+    return view('profile.sejarah');
+})->name('sejarah');
