@@ -15,9 +15,6 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedBigInteger('users_id')->nullable();
-            $table->foreign('users_id')->references('id')->on('users')->onDelete('set null');
-            // $table->unsignedBigInteger('motors_id')->nullable();
             $table->string('date');
             $table->string('location');
             $table->string('description');

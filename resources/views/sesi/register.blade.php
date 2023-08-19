@@ -15,12 +15,12 @@
         <form action="/sesi/create" method="POST">
         @csrf
             <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
+                <label for="name" class="form-label">Nama</label>
                 <input type="name" value="{{ Session::get('nama') }}" name="nama" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label class="form-label">Jenis Kelamin</label>
-                <select name="jk" class="form-control @error('jk') is-invalid @enderror">
+                <select name="gender" class="form-control @error('jk') is-invalid @enderror">
                     <option value="">Pilih</option>
                     <option @selected(old('jk') == 'Laki-Laki') value="Laki-Laki">Laki-Laki</option>
                     <option @selected(old('jk') == 'Perempuan') value="Perempuan">Perempuan</option>
@@ -78,11 +78,7 @@
                 <input type="file" value="{{ Session::get('stnk') }}" name="stnk" class="form-control" required>
             </div>
             <div class="mb-3">
-                <label for="tipemotor" class="form-label">Tipe Motor</label>
-                <input type="text" value="{{ Session::get('tipemotor') }}" name="tipemotor" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label for="tgl_gabung" class="form-label">Tanggal Bergabung</label>
+                <label for="join" class="form-label">Tanggal Bergabung</label>
                 <input type="date" value="{{ Session::get('tgl_gabung') }}" name="tgl_gabung" class="form-control" required>
             </div>
             <div class="mb-3 d-grid">

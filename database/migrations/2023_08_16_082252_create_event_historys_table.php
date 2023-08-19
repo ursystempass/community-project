@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('commentposts', function (Blueprint $table) {
-            $table->id('id');
-            $table->unsignedBigInteger('events_id')->nullable();
-            $table->text('content');
-            $table->dateTime('date_post');
+        Schema::create('event_historys', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('comment_post_id')->nullable();
+            $table->string('description');
             $table->timestamps();
-            $table->foreign('events_id')->references('id')->on('events')->onDelete('set null');
+            $table->foreign('comment_post_id')->references('id')->on('comment_posts')->onDelete('set null');
         });
     }
 
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('commentposts');
+        Schema::dropIfExists('event_historys');
     }
 };
