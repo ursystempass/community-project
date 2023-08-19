@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('date');
             $table->string('location');
             $table->string('description');
-            $table->text('image');
+            $table->string('image');
             $table->string('link')->nullable();
             $table->timestamps();
             // $table->foreign('motors_id')->references('id')->on('motors')->onDelete('set null');

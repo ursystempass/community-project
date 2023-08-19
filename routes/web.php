@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SessionController;
 use Illuminate\Http\Request;
 use App\Models\Message;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,5 +41,5 @@ Route::post('/submit-message', function (Request $request) {
     return redirect('/')->with('success', 'Pesan berhasil dikirim!');
 });
 
-
+Route::resource('events', EventController::class);
 // ends
