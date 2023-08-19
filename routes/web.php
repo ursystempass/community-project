@@ -23,9 +23,6 @@ Route::get('/sesi', [SessionController::class, 'index'])->name('login');
 
 Route::get('/sesi/register', [SessionController::class, 'register']);
 
-Route::get('/profile/sejarah', function () {
-    return view('profile.sejarah');
-})->name('sejarah');
 
 Route::get('/', function () {
     return view('landingpage.landing'); // Mengganti 'welcome' dengan 'landingpage.landing'
