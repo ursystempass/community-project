@@ -32,11 +32,11 @@
 
         <nav class="navbar">
             <a href="#home">beranda</a>
-            <a href="#kegiatan">ride adventures</a>
+            <a href="{{ route('event') }}">Ride Adventure</a>
             <a href="#members">member benefits</a>
-            <a href="#profile">profil</a>
-            <a href="#login">login</a>
-            <a href="#register">register</a>
+            <a href="{{ route('sejarah') }}">profil</a>
+            <a href="/sesi">Login</a>
+            <a href="/sesi/register">Register</a>
             <a href="#others">lainya</a>
         </nav>
 
@@ -338,9 +338,9 @@
                 <a href="#"><i class="fas fa-chevron-right"></i>Beranda</a>
                 <a href="#"><i class="fas fa-chevron-right"></i>Ride Adventures</a>
                 <a href="#"><i class="fas fa-chevron-right"></i>Member Benefits</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>Profil</a>
-                <a href="/login"><i class="fas fa-chevron-right"></i>Login</a>
-                <a href="#"><i class="fas fa-chevron-right"></i>Register</a>
+                <a href="{{ route('sejarah') }}"><i class="fas fa-chevron-right"></i>Profil</a>
+                <a href="/sesi" class="navbar-link"><i class="fas fa-chevron-right"></i>Profil</a>
+                <a href="/sesi/register" class="navbar-link"><i class="fas fa-chevron-right"></i>Profil</a>
                 <a href="#"><i class="fas fa-chevron-right"></i>Lainnya</a>
             </div>
 
