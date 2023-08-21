@@ -13,12 +13,10 @@ return new class extends Migration
     {
         Schema::create('comment_posts', function (Blueprint $table) {
             $table->id('id');
-            $table->unsignedBigInteger('event_id')->nullable();
+            $table->foreignId('event_id')->constrained('events')->cascadeOnDelete();
             $table->text('content');
             $table->dateTime('date_post');
             $table->timestamps();
-            $table->foreign('event_id')->references('id')->on('events')->onDelete('set null');
-
         });
     }
 
