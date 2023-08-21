@@ -122,7 +122,7 @@
                     <p>Bergabunglah bersama kami dalam perjalanan mendebarkan saat kami memulai acara Ride Adventures
                         pada tanggal 20 Agustus 2023! Siapkan diri Anda untuk menjelajahi rute-rute indah dan menjalin
                         persahabatan baru.</p>
-                    <a href="" class="btn">Lihat Info Lebih Lanjut</a>
+                        <a href="{{ route('event') }}" class="btn">Lihat Info Lebih Lanjut</a>
                 </div>
             </div>
             <div class="box" data-aos="fade-up">
@@ -133,7 +133,8 @@
                     <div class="price">20.000 <span>50.000</span></div>
                     <p>Rasakan kebebasan jalan terbuka sekali lagi pada tanggal 5 September 2023. Acara Ride Adventures
                         kami adalah kesempatan Anda untuk melepaskan rutinitas dan merembrak kegembiraan bermotor.</p>
-                    <a href="" class="btn">Lihat Info Lebih Lanjut</a>
+                    <a href="{{ route('event') }}" class="btn">Lihat Info Lebih Lanjut</a>
+
                 </div>
             </div>
             <div class="box" data-aos="fade-up">
@@ -145,7 +146,8 @@
                     <p>Tanggal 12 Oktober 2023, adalah kesempatan Anda untuk bergabung dengan rekan-rekan pengendara
                         dalam perjalanan epik selama acara Ride Adventures kami. Biarkan angin membimbing Anda saat kita
                         menjelajahi jalan-jalan bersama.</p>
-                    <a href="" class="btn">Lihat Info Lebih Lanjut</a>
+                    <a href="{{ route('event') }}" class="btn">Lihat Info Lebih Lanjut</a>
+
                 </div>
             </div>
         </div>
