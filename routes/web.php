@@ -53,7 +53,7 @@ Route::put('events/{event}', [EventController::class, 'update'])->name('events.u
 Route::delete('events/{event}', [EventController::class, 'destroy'])->name('events.destroy');
 Route::get('event', function () {
     return view('events.event');
-});
+})->name('event');
 // ends
 
 // sejarah
