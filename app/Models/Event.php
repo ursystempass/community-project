@@ -15,4 +15,10 @@ class Event extends Model
     protected $fillable = [
         'name','date', 'location', 'description', 'image', 'link'
     ];
+
+    public function comment_posts()
+    {
+        return $this->hasMany(CommentPost::class);
+    }
+
 }

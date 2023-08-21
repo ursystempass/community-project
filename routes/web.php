@@ -1,10 +1,12 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SessionController;
 use Illuminate\Http\Request;
 use App\Models\Message;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\CommentPostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,8 +60,7 @@ Route::get('event', function () {
 Route::get('/profile/sejarah', function () {
     return view('profile.sejarah');
 })->name('sejarah');
-// end
 
-// comment post
+
+
 Route::resource('comment_posts', CommentPostController::class);
-// end
