@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('event_id')->nullable();
+            $table->enum('status', ['register', 'presence'])->default('register');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('event_id')->references('id')->on('events')->onDelete('set null');
             $table->timestamps();
@@ -26,6 +27,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('event_users');
+        Schema::table('event_users', function (Blueprint $table) {
+            $table->dropColumn('status');
+        });
     }
 };

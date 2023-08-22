@@ -15,13 +15,11 @@ return new class extends Migration
         Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('date');
+            $table->date('date');
             $table->string('location');
             $table->string('description');
             $table->string('image');
-            $table->string('link')->nullable();
             $table->timestamps();
-            // $table->foreign('motors_id')->references('id')->on('motors')->onDelete('set null');
                 });
     }
 
