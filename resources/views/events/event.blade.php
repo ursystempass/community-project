@@ -47,6 +47,9 @@ rel="stylesheet">
                   <p class="card-text">
                     Jl.
                   </p>
+                  <p class="card-text">
+                  <input type="date" class="date">
+                  </p>
                   <ul class="card-meta-list">
                     <li class="card-meta-item">
                       <div class="meta-box">
@@ -97,6 +100,9 @@ rel="stylesheet">
                   <p class="card-text">
                     Jl.
                   </p>
+                  <p class="card-text">
+                    <input type="date" class="date">
+                  </p>
                   <ul class="card-meta-list">
                     <li class="card-meta-item">
                       <div class="meta-box">
@@ -145,6 +151,9 @@ rel="stylesheet">
                   <h3 class="h3 card-title">Sunset Ride: Menyaksikan Keindahan Matahari Terbenam Bersama-sama</h3>
                   <p class="card-text">
                     Jl.
+                  </p>
+                  <p class="card-text">
+                    <input type="date" class="date">
                   </p>
                   <ul class="card-meta-list">
                     <li class="card-meta-item">
@@ -195,6 +204,9 @@ rel="stylesheet">
               <p class="card-text">
                 Jl.
               </p>
+              <p class="card-text">
+                <input type="date" class="date">
+            </p>
               <ul class="card-meta-list">
                 <li class="card-meta-item">
                   <div class="meta-box">
@@ -244,6 +256,9 @@ rel="stylesheet">
           <p class="card-text">
             Jl.
           </p>
+          <p class="card-text">
+            <input type="date" class="date">
+        </p>
           <ul class="card-meta-list">
             <li class="card-meta-item">
               <div class="meta-box">
@@ -294,6 +309,9 @@ rel="stylesheet">
       <p class="card-text">
         Jl.
       </p>
+      <p class="card-text">
+        <input type="date" class="date">
+    </p>
       <ul class="card-meta-list">
         <li class="card-meta-item">
           <div class="meta-box">
@@ -342,6 +360,9 @@ rel="stylesheet">
     <h3 class="h3 card-title">Weekend Getaway: Melepaskan Diri dari Kehidupan Sehari-hari</h3>
     <p class="card-text">
       Jl.
+    </p>
+    <p class="card-text">
+        <input type="date" class="date">
     </p>
     <ul class="card-meta-list">
       <li class="card-meta-item">
@@ -392,6 +413,9 @@ rel="stylesheet">
     <p class="card-text">
       Jl.
     </p>
+    <p class="card-text">
+        <input type="date" class="date">
+    </p>
     <ul class="card-meta-list">
       <li class="card-meta-item">
         <div class="meta-box">
@@ -441,6 +465,9 @@ rel="stylesheet">
     <p class="card-text">
       Jl.
     </p>
+    <p class="card-text">
+        <input type="date" class="date">
+    </p>
     <ul class="card-meta-list">
       <li class="card-meta-item">
         <div class="meta-box">
@@ -489,6 +516,9 @@ rel="stylesheet">
     <h3 class="h3 card-title">Women Riders Meetup: Menghubungkan Para Pengendara Wanita</h3>
     <p class="card-text">
         jl
+    </p>
+    <p class="card-text">
+        <input type="date" class="date">
     </p>
     <ul class="card-meta-list">
       <li class="card-meta-item">

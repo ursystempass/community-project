@@ -329,6 +329,13 @@ html::-webkit-scrollbar-thumb{
     margin-bottom: 20px;
   }
 
+  .package-card .card-text .date{
+    font-family: var(--ff-poppins);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-color-2);
+  }
+
   .card-meta-list {
     background:white;
     max-width: max-content;
