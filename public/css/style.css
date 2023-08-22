@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&display=swap');
   :root{
     --orange: #f79f1f ;
     --text-color-1:#444 ;
@@ -618,9 +618,6 @@ line-height: 1.8;
     resize: none;
 }
 
-.contact form .inputBox input {
-    width: calc(50% - 0.5rem); /* Adjust the width calculation to account for margin */
-}
 
 /* Style for focused input and textarea */
 .contact form .inputBox input:focus,
