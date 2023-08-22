@@ -17,7 +17,7 @@ return new class extends Migration
             $table->enum('role', ['admin','member', 'non-member'])->default('non-member');
             $table->enum('gender', ['Male', 'Female']);
             $table->date('date_birth');
-            $table->string('whatsapp', 15);
+            $table->string('phone_number', 15);
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('city', 100);
             $table->string('district', 100);
             $table->string('postal_code', 100);
-            $table->date('join');
+            $table->date('join_date');
             $table->rememberToken();
             $table->timestamps();
         });
