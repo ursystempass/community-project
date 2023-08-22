@@ -21,4 +21,8 @@ class Event extends Model
         return $this->hasMany(CommentPost::class);
     }
 
+    public function event_users()
+    {
+        return $this->hasMany(EventUser::class);
+    }
 }

@@ -190,7 +190,7 @@
     {{-- review --}}
     <section class="review" id="review">
         <h1 class="heading">
-            clients <span>review</span>
+            events <span>review</span>
         </h1>
         <div class="swiper-container review-slider" data-aos="zoom-in">
             <div class="swiper-wrapper">
@@ -253,14 +253,13 @@
             {{ session('success') }}
         </div>
     @endif --}}
-    <h1 class="heading"><span>Kritik</span>Saran</h1>
+    <h1 class="heading"><span>Kritik</span> Saran</h1>
     <div class="box-container" data-aos="fade-up"></div>
         <form action="/submit-message" method="post" data-aos="zoom"
             onsubmit="return confirm('Terima kasih, pesan anda berhasil dikirim!')">
             @csrf
             <div class="inputBox">
                 <input type="text" name="name" placeholder="Masukan Nama Anda" data-aos="fade-up">
-                <input type="text" name="subject" placeholder="Judul Pesan" data-aos="fade-up">
             </div>
             <textarea name="message" placeholder="Kirimkan Pesanmu" cols="30" rows="10" data-aos="fade-up"></textarea>
             <input type="submit" value="send message" class="btn">

@@ -14,8 +14,7 @@ return new class extends Migration
         Schema::create('comment_posts', function (Blueprint $table) {
             $table->id('id');
             $table->foreignId('event_id')->constrained('events')->cascadeOnDelete();
-            $table->text('content');
-            $table->dateTime('date_post');
+            $table->string('content');
             $table->timestamps();
         });
     }
