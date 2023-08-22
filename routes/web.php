@@ -41,7 +41,7 @@ Route::post('/submit-message', function (Request $request) {
 
     $message->save();
 
-    return redirect('/')->with('success', 'Pesan berhasil dikirim!');
+    return redirect('/')->with('success', 'Pesan berhasil dikirim!');
 });
 
 Route::get('events', [EventController::class, 'index'])->name('events.index');
@@ -64,3 +64,14 @@ Route::get('/profile/sejarah', function () {
 
 
 Route::resource('comment_posts', CommentPostController::class);
+
+// dahsboard
+Route::get('/dashboard', function () {
+    return view('dashboard.index');
+});
+
+
+// comment post
+Route::get('/commentpost', function () {
+    return view('commentpost.index_users');
+});
