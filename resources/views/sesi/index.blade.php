@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Login</title>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/stylelogin.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="w-50 center border rounded px-3 py-3 mx-auto">
-        <h1>Login</h1>
-        <form action="/sesi/login" method="POST">
-            @csrf
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" value="{{ Session::get('email') }}" name="email" class="form-control {{ $errors->has('email') ? 'is-invalid' : '' }}">
-                @error('email')
-                    <div class="invalid-feedback">{{$message}}</div>
-                @enderror
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" value="{{ Session::get('password') }}" name="password" class="form-control {{ $errors->has('password') ? 'is-invalid' : '' }}">
-                @error('password')
-                    <div class="invalid-feedback">{{$message}}</div>
-                @enderror
+	<img class="wave" src="{{ asset('') }}" alt="">
+	<div class="container">
+		<div class="img">
+			<img src="{{ asset('images/209408166-biker-man-riding-motorcycle-removebg-preview.png') }}" alt="">
+		</div>
+		<div class="login-content">
+			<form action="sesi/index">
+				<img src="{{ asset('images/orangeprofile1.png') }}" alt="">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Email</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i">
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
                 <br>
-            <div class="mb-3 d-grid">
-                <button name="submit" type="submit" class="btn btn-warning">Login</button>
-            </div>
-        </form>
-        <form action="sesi/register">
-        <div class="mb-3 d-grid">
-                <button name="submit" type="submit" class="btn btn-warning">Register</button>
-            </div>
-        </form>
-    </div>
+            	<input type="submit" class="btn btn-warning" value="Login">
 
+                <form action="sesi/register">
+                    <div class="mb-3 d-grid">
+                            <button name="submit" type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                </form>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
