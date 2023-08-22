@@ -122,7 +122,7 @@
                     <p>Bergabunglah bersama kami dalam perjalanan mendebarkan saat kami memulai acara Ride Adventures
                         pada tanggal 20 Agustus 2023! Siapkan diri Anda untuk menjelajahi rute-rute indah dan menjalin
                         persahabatan baru.</p>
-                    <a href="" class="btn">Lihat Info Lebih Lanjut</a>
+                        <a href="{{ route('event') }}" class="btn">Lihat Info Lebih Lanjut</a>
                 </div>
             </div>
             <div class="box" data-aos="fade-up">
@@ -133,7 +133,8 @@
                     <div class="price">20.000 <span>50.000</span></div>
                     <p>Rasakan kebebasan jalan terbuka sekali lagi pada tanggal 5 September 2023. Acara Ride Adventures
                         kami adalah kesempatan Anda untuk melepaskan rutinitas dan merembrak kegembiraan bermotor.</p>
-                    <a href="" class="btn">Lihat Info Lebih Lanjut</a>
+                    <a href="{{ route('event') }}" class="btn">Lihat Info Lebih Lanjut</a>
+
                 </div>
             </div>
             <div class="box" data-aos="fade-up">
@@ -145,7 +146,8 @@
                     <p>Tanggal 12 Oktober 2023, adalah kesempatan Anda untuk bergabung dengan rekan-rekan pengendara
                         dalam perjalanan epik selama acara Ride Adventures kami. Biarkan angin membimbing Anda saat kita
                         menjelajahi jalan-jalan bersama.</p>
-                    <a href="" class="btn">Lihat Info Lebih Lanjut</a>
+                    <a href="{{ route('event') }}" class="btn">Lihat Info Lebih Lanjut</a>
+
                 </div>
             </div>
         </div>
@@ -251,21 +253,17 @@
             {{ session('success') }}
         </div>
     @endif --}}
+    <h1 class="heading"><span>Kritik</span>Saran</h1>
+    <div class="box-container" data-aos="fade-up"></div>
         <form action="/submit-message" method="post" data-aos="zoom"
             onsubmit="return confirm('Terima kasih, pesan anda berhasil dikirim!')">
             @csrf
             <div class="inputBox">
                 <input type="text" name="name" placeholder="Masukan Nama Anda" data-aos="fade-up">
-                <input type="email" name="email" placeholder="Masukan Email Anda" data-aos="fade-up">
-            </div>
-
-            <div class="inputBox">
-                <input type="number" name="phone_number" placeholder="Masukan Nomor Telepon Anda" data-aos="fade-up">
                 <input type="text" name="subject" placeholder="Judul Pesan" data-aos="fade-up">
             </div>
             <textarea name="message" placeholder="Kirimkan Pesanmu" cols="30" rows="10" data-aos="fade-up"></textarea>
             <input type="submit" value="send message" class="btn">
-
         </form>
     </section>
     {{-- ends --}}
@@ -339,8 +337,8 @@
                 <a href="#"><i class="fas fa-chevron-right"></i>Ride Adventures</a>
                 <a href="#"><i class="fas fa-chevron-right"></i>Member Benefits</a>
                 <a href="{{ route('sejarah') }}"><i class="fas fa-chevron-right"></i>Profil</a>
-                <a href="/sesi" class="navbar-link"><i class="fas fa-chevron-right"></i>Profil</a>
-                <a href="/sesi/register" class="navbar-link"><i class="fas fa-chevron-right"></i>Profil</a>
+                <a href="/sesi" class="navbar-link"><i class="fas fa-chevron-right"></i>Login</a>
+                <a href="/sesi/register" class="navbar-link"><i class="fas fa-chevron-right"></i>Register</a>
                 <a href="#"><i class="fas fa-chevron-right"></i>Lainnya</a>
             </div>
 
