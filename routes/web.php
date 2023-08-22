@@ -34,9 +34,6 @@ Route::post('/submit-message', function (Request $request) {
     $message = new Message();
 
     $message->name = $request->input('name');
-    $message->email = $request->input('email');
-    $message->phone_number = $request->input('phone_number');
-    $message->subject = $request->input('subject');
     $message->message = $request->input('message');
 
     $message->save();
