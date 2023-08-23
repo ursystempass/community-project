@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('province', 100);
             $table->string('city', 100);
             $table->string('district', 100);
-            $table->string('postal_code', 100);
+            $table->string('postal_code', 5);
             $table->date('join_date');
             $table->rememberToken();
             $table->timestamps();
