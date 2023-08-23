@@ -24,7 +24,6 @@
             <th scope="col">No</th>
             <th scope="col">Event</th>
             <th scope="col">Content</th>
-            <th scope="col">Date Post</th>
             <th scope="col">Action</th>
           </tr>
         </thead>
@@ -35,7 +34,6 @@
             <th scope="row">{{ $loop->iteration }}</th>
             <td>{{ $cp->event ? $cp->event->name : 'Event Not Found' }}</td>
             <td>{{ $cp->content}}</td>
-            <td>{{ $cp->date_post}}</td>
             <td>
                 <a href="{{ route('comment_posts.edit', $cp->id) }}"  class="btn btn-outline-secondary btn-sm">Edit</a>
 
