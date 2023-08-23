@@ -26,7 +26,6 @@ class CommentPostController extends Controller
         $validated = $request->validate([
             'event_id' => 'required',
             'content' => 'required|string',
-            'date_post' => 'required|date',
 
         ]);
 
@@ -45,7 +44,6 @@ class CommentPostController extends Controller
         $validated = $request->validate([
             'event_id' => 'required',
             'content' => 'required|string',
-            'date_post' => 'required|date',
 
         ]);
 

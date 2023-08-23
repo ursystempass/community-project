@@ -33,16 +33,6 @@
                 <div class="invalid-feedback">{{ $message }}</div>
             @enderror
         </div>
-
-        <div class="form-group">
-            <label for="exampleInputEmail1">Date Post</label>
-            <input name="date_post" type="date" class="form-control @error('date_post') is-invalid @enderror" value="{{ old('date_post', $comment_post->date_post ?? '') }}">
-            @error('date_post')
-                <div class="invalid-feedback">{{ $message }}</div>
-            @enderror
-        </div>
-
-
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
