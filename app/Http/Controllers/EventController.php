@@ -27,7 +27,6 @@ class EventController extends Controller
             'location' => 'required',
             'description' => 'required',
             'image' =>'required|image|mimes:png,jpg,jpeg', // Add image validation rule
-            'link' => 'required',
         ]);
         $image = $request->file('image');
         $image->storeAs('public/event_images', $image->hashName());
@@ -38,7 +37,6 @@ class EventController extends Controller
             'location' => $request->location,
             'description' => $request->description,
             'image' => $image->hashName(),
-            'link' => $request->link,
         ]);
 
         return redirect()->route('events.index')->with('success', 'Event berhasil ditambahkan.');
@@ -85,7 +83,6 @@ public function update(Request $request, $id)
         'location' => 'required',
         'description' => 'required',
         'image' => 'image', // Update image validation rule
-        'link' => 'required',
     ]);
 
     $event = Event::findOrFail($id);

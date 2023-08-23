@@ -68,15 +68,6 @@
         </div>
     @enderror
 </div>
-            <div class="mb-3">
-                <label for="link" class="form-label">Link:</label>
-                <input type="text" name="link" class="form-control  @error('link') is-invalid @enderror">
-                @error('link')
-        <div class="alert alert-danger mt-2">
-            {{ $message }}
-        </div>
-    @enderror
-            </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
     </div>
