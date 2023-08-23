@@ -8,7 +8,7 @@
   </head>
   <body>
 <div class="container mt-5">
-    <a href="{{ route('comment_posts.create') }}" class="btn btn-outline-primary">Tambah Event</a>
+    <a href="{{ route('comment_posts.create') }}" class="btn btn-outline-primary">Tambah Comment Post</a>
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
