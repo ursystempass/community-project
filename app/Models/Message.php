@@ -9,6 +9,6 @@ class Message extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama', 'email', 'no_tlp', 'subject', 'pesan'];
+    protected $fillable = ['name','user_id', 'message'];
 
 }
