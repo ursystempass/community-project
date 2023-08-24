@@ -11,10 +11,8 @@ use Illuminate\Database\Eloquent\Model;
 class Event extends Model
 {
     use HasFactory;
-    
-    protected $guarded = [
-        'name','date', 'location', 'description', 'image'
-    ];
+
+    protected $guarded = [];
 
     public function comment_posts()
     {
