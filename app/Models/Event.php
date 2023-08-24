@@ -13,7 +13,7 @@ class Event extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name','date', 'location', 'description', 'image', 'link'
+        'name','date', 'location', 'description', 'image',
     ];
 
     public function comment_posts()
