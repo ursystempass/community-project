@@ -12,9 +12,6 @@ use Illuminate\Database\Eloquent\Model;
 class Event extends Model
 {
     use HasFactory;
-    protected $fillable = [
-        'name','date', 'location', 'description', 'image',
-    ];
 
     public function comment_posts()
     {
