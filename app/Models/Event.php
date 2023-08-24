@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-// app/Models/Event.php
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -13,7 +12,7 @@ class Event extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'name','date', 'location', 'description', 'image',
+        'name','date', 'location', 'description', 'image'
     ];
 
     public function comment_posts()
@@ -23,6 +22,7 @@ class Event extends Model
 
     public function event_users()
     {
-        return $this->hasMany(EventUser::class);
+        return $this->hasMany(Eventuser ::class);
     }
+
 }
